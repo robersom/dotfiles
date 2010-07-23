@@ -5,7 +5,7 @@ JAVA_LANG_DIR=$HOME/programs/java/languages
 JAVA_PROG_DIR=$HOME/programs/java/programs
 JAVA_SERVERS_DIR=$HOME/programs/java/servers
 
-export   JAVA_HOME=$(/usr/libexec/java_home)
+export   JAVA_HOME=/usr/lib/jvm/java-6-sun
 export    ANT_HOME=$JAVA_PROG_DIR/ant
 export    MVN_HOME=$JAVA_PROG_DIR/maven
 
