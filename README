@@ -2,14 +2,17 @@ Dotfiles to setup a bash environment.
 This directory needs to be in $HOME/dotfiles
 
 cd
-mkdir github-projects
-git clone git://github.com/robersom/dotfiles.git github-projects/dotfiles
+mkdir ~/dotfiles
+git clone git://github.com/robersom/dotfiles.git dotfiles
 
-ln -s github-projects/dotfiles
-ln -s dotfiles/bash_profile .bash_profile
+to install, run . ~/dotfiles/install.sh
+
+or in bash:
+
+ln -s dotfiles/bash_profile .bash_aliases
 ln -s dotfiles/gemrc .gemrc
 ln -s dotfiles/irbrc .irbrc
 ln -s dotfiles/gitignore .gitignore
 
-mkdir bin
+mkdir ~/bin
 ln -s dotfiles/git-publish-branch bin/
