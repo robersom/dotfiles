@@ -10,7 +10,7 @@ cd
 if [ -d "$diretorio" ]; then
 
   if [ ! -L .bash_aliases ]; then
-    ln -s dotfiles/bash_profile .bash_aliases
+    ln -s dotfiles/bash_profile .bash_profile
   fi
 
   if [ ! -L .gemrc ]; then
@@ -35,6 +35,9 @@ if [ -d "$diretorio" ]; then
 
   echo "criados links simbolicos - created symbolic links"
   echo ""
+
+  echo 'if [ -f ~/.bash_profiles ]; then . ~/.bash_profiles fi' >> ~/.bashrc
+
   echo "Atualizando bash - renew bash"
   source ~/.bashrc
 
