@@ -1,13 +1,17 @@
 Dotfiles to setup a bash environment.
 This directory needs to be in $HOME/dotfiles
 
-cd
-mkdir ~/dotfiles
-git clone git://github.com/robersom/dotfiles.git dotfiles
+to clone:
+    cd
+    git clone git://github.com/robersom/dotfiles.git dotfiles
 
-to install, run . ~/dotfiles/install.sh
 
-or in bash:
+TO INSTALL
+
+   run . ~/dotfiles/install.sh
+
+OR
+ in bash:
 
 ln -s dotfiles/bash_profile .bash_aliases
 ln -s dotfiles/gemrc .gemrc
