@@ -36,11 +36,15 @@ if [ -d "$diretorio" ]; then
   echo "criados links simbolicos - created symbolic links"
   echo ""
 
-  echo 'if [ -f ~/.bash_profiles ]; then . ~/.bash_profiles fi' >> ~/.bashrc
+  echo "criando copia do .bashrc  para bashrcOld - copy from .bashrc to .bashrcOld"
+  if [ ! -f .bashrcOld ]; then
+    mv ~/.bashrc ~/.bashrcOld
+  fi
+    
+  echo "gerando outro .bashrc - generate .bashrc"
+  cp ~/dotfiles/bash_profile ~/.bashrc
 
-  echo "Atualizando bash - renew bash"
-  source ~/.bashrc
-
+  echo ""
 else
 
   echo "diretorio $diretorio nao existe"
@@ -49,4 +53,7 @@ else
 fi 
 
 echo "fim da instalacao - End of installation "
-echo "=========================================="
+echo "================================================"
+echo "Atualize o bash com o comando source ~/.bashrc"
+echo "run the command: source ~/.bashrc"
+echo "================================================"
