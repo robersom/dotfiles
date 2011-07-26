@@ -52,6 +52,8 @@ else
 
 fi 
 
+source ~/.bashrc
+
 echo "fim da instalacao - End of installation "
 echo "================================================"
 echo "Atualize o bash com o comando source ~/.bashrc"
