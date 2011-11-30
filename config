@@ -65,4 +65,8 @@ export HISTCONTROL=ignoreboth
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 export HISTSIZE=100000
-PS1="\n\w $GREEN\$(__git_ps1 ' [%s] ') $RESET\$ "
+#PS1="\n\w $GREEN\$(__git_ps1 ' [%s] ') $RESET\$ "
+PS1="\n\[\033[1;30;33mLOCAL\]$RESET [\w]  $GREEN\$(__git_ps1 ' [%s] ') \n $RESET\$ "
+
+
+
